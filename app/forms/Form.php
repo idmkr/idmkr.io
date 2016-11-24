@@ -29,7 +29,7 @@ abstract class Form extends ValidatableForm
             'smtp' => [
                 'host' => 'smtp.mailgun.org',
                 'user' => 'postmaster@idmkr.io',
-                'password' => '3fd36f6738f30cf55d589c524fd6f410',
+                'password' => file_get_contents(dirname(__FILE__)."/mailgun.pass"),
                 'port' => 587,
             ]
         ];

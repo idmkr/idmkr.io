@@ -8,3 +8,4 @@ app/brunch/node_modules
 **/vendor
 app/forms/received
 app/composer.lock
+app/forms/mailgun.pass

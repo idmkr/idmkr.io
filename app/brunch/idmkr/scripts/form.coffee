@@ -45,9 +45,4 @@ module.exports =
                 else
                     #$form.find('[name]').each -> $(this).toggleFormError(false)
 
-                    $form.find(':submit').replaceWith '<p>Merci.<br>Nous vous répondrons dans les meilleurs délais.
-                           Vous allez être redirigé vers la page d\'accueil
-                           dans 10 secondes.</p>'
-                    setTimeout(->
-                        location.href = '/';
-                    , 10000)
+                    $form.find(':submit').replaceWith '<p>Merci.<br>Nous vous répondrons dans les meilleurs délais.</p>'
