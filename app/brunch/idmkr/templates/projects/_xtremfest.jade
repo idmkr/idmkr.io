@@ -1,0 +1,30 @@
+include /mixins/_case-study
+
++case-study("screen-xf.jpg")
+
+    +case-study-intro("Xtrem Fest")
+        p.left-align
+            | Partenaire du Xtrem Fest Festival depuis 2012, nous réalisons chaque année leur site internet.
+            | En 2016, un soin particulier a été porté aux détails : curseurs, animations, ambiance.
+
+    +case-study-intro-right({
+        year: 2016,
+        keypoints: [
+            "Site évementiel de Festival",
+            "Multilingue",
+            "Plateforme Wordpress"
+        ],
+        link: 'http://www.xtremefest.fr/'
+    })
+
+    +case-study-component({
+        title: "Festival Xtrem Fest",
+        screenshot: 'projects/xf/home.jpg',
+        keypoints: [
+            "Design entièrement sur mesure",
+            "Réservation de billet en ligne",
+        ]
+    })
+        p C'est le cinquième site consécutif que nous réalisons pour le Xtrem Fest. C'est un festival qui grandit et évolue en même temps que nous !
+
+    +case-study-footer

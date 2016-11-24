@@ -1,0 +1,29 @@
+{
+    "name":"idmkr/idmkr",
+    "homepage":"https://idmkr.io",
+    "license":"MIT",
+    "require":{
+        "php":">=5.3.0",
+        "slim/slim": "2.*",
+        "slim/views": "~0.1",
+        "twig/twig":"1.*",
+        "philipsharp/slim-view-plates": "5.*",
+        "panique/pdo-debug": "0.2",
+        "panique/php-sass": "~1.0",
+        "matthiasmullie/minify": "~1.3",
+        "maximebf/debugbar": "^1.10",
+        "yusukezzz/slim-debugbar": "1.*",
+        "christianklisch/slim-minify": "0.4.4",
+        "respect/validation": "^1.0",
+        "egulias/email-validator": "^1.2",
+        "phpmailer/phpmailer": "^5.2",
+        "mobiledetect/mobiledetectlib": "^2.8"
+    },
+    "autoload":{
+        "psr-4":{
+            "Forms\\": "forms",
+            "Idmkr\\Formeister\\": "workbench/idmkr/formeister/src",
+            "Idmkr\\Formeister\\Traits\\": "workbench/idmkr/formeister/src/Traits"
+        }
+    }
+}

@@ -1,0 +1,224 @@
+/* Content */
+#intro-container #intro-bgrd{
+    width: 100%;
+    height: 100%;
+    position:absolute;
+    top:0;
+    left:0;
+    background-color:#050505;
+    background-size:cover;
+    opacity:0;
+    transition: opacity .3s ease-in;
+    z-index:0;
+
+    &.showed{
+		opacity:1;
+		transition: opacity .3s ease-out;
+    }
+}
+#intro-container,
+.master{
+	width:100%;
+	height:100%;
+}
+
+.intro-header {
+	position: fixed;
+	top: 0;
+	z-index: 100;
+	min-height: 480px;
+	width: 100%;
+	height: 100%;
+	text-align:center;
+	background-color:#050505;
+
+	h1{
+	  font-family: 'Tulpen One', cursive;
+	  font-size: 5rem;
+	  color:white;
+	  a{
+	  	color:white;
+	  	cursor: pointer;
+	  }
+	}
+}
+
+.intro-logo,
+.intro-loader {
+	position: absolute;
+	left: 0;
+	width: 100%;
+	opacity: 0;
+	cursor: default;
+	pointer-events: none;
+}
+
+.intro-logo {
+	top: 0;
+	width:200px;
+	height: 100%;
+	left:50%;
+	margin-left:-100px;
+	-webkit-transform: translate3d(0,25%,0);
+	transform: translate3d(0,25%,0);
+	-webkit-transition: all 1s cubic-bezier(0.7,0,0.3,1);
+	transition: all 1s cubic-bezier(0.7,0,0.3,1);
+}
+
+.intro-loader {
+	bottom: 20%;
+}
+
+.intro-loader svg path {
+	fill: none;
+	stroke-width: 6;
+}
+
+.intro-loader svg path.intro-loader-circlebg {
+	stroke: #ddd;
+}
+
+.intro-loader svg path.intro-loader-circle {
+	-webkit-transition: stroke-dashoffset 0.2s;
+	transition: stroke-dashoffset 0.2s;
+	stroke: #51326e;
+}
+
+
+/* Animations */
+
+/* Initial animation of header elements */
+.loading .intro-logo,
+.loading .intro-loader {
+	opacity: 1;
+	-webkit-animation: animInitialHeader 1s cubic-bezier(0.7,0,0.3,1) both;
+	animation: animInitialHeader 1s cubic-bezier(0.7,0,0.3,1) both;
+}
+
+.loading .intro-loader {
+	-webkit-animation-delay: 0.2s;
+	animation-delay: 0.2s;
+}
+
+@-webkit-keyframes animInitialHeader {
+	from { opacity: 0; -webkit-transform: translate3d(0,800px,0); }
+}
+
+@keyframes animInitialHeader {
+	from { opacity: 0; -webkit-transform: translate3d(0,800px,0); transform: translate3d(0,800px,0); }
+}
+
+/* Header elements when loading finishes */
+.loaded .intro-logo,
+.loaded .intro-loader {
+	opacity: 1;
+}
+
+.loaded .intro-logo {
+	-webkit-transform-origin: 50% 0;
+	transform-origin: 50% 0;
+	-webkit-animation: animLoadedLogo 1s cubic-bezier(0.7,0,0.3,1) forwards;
+	animation: animLoadedLogo 1s cubic-bezier(0.7,0,0.3,1) forwards;
+	left:4%;
+}
+
+@-webkit-keyframes animLoadedLogo {
+	to { -webkit-transform: translate3d(0,100%,0) translate3d(0,10px,0) scale3d(0.5,0.5,1); }
+}
+
+@keyframes animLoadedLogo {
+	to {
+		-webkit-transform: translate3d(0,100%,0) translate3d(0,10px,0) scale3d(0.5,0.5,1);
+		transform: translate3d(0,100%,0) translate3d(0,10px,0) scale3d(0.5,0.5,1);
+	}
+}
+
+// .loaded .intro-logo,
+.loaded .intro-loader {
+	-webkit-animation: animLoadedLoader 0.5s cubic-bezier(0.7,0,0.3,1) forwards;
+	animation: animLoadedLoader 0.5s cubic-bezier(0.7,0,0.3,1) forwards;
+}
+
+@-webkit-keyframes animLoadedLoader {
+	to { opacity: 0; -webkit-transform: translate3d(0,-100%,0) scale3d(0.3,0.3,1); }
+}
+
+@keyframes animLoadedLoader {
+	to { opacity: 0; -webkit-transform: translate3d(0,-100%,0) scale3d(0.3,0.3,1); transform: translate3d(0,-100%,0) scale3d(0.3,0.3,1); }
+}
+
+/* Header animation when loading finishes */
+.loaded .intro-header {
+	-webkit-animation: animLoadedHeader 1s cubic-bezier(0.7,0,0.3,1) forwards;
+	animation: animLoadedHeader 1s cubic-bezier(0.7,0,0.3,1) forwards;
+}
+
+@-webkit-keyframes animLoadedHeader {
+	to { -webkit-transform: translate3d(0,-100%,0); }
+}
+
+@keyframes animLoadedHeader {
+	to { -webkit-transform: translate3d(0,-100%,0); transform: translate3d(0,-100%,0); }
+}
+
+/* Content animations */
+.loaded .master .home-hello,
+.loaded .master .header .nav-wrapper,
+.loaded .master .home-hello h1,
+.loaded .master .home-hello h4,
+.loaded .master .home-hello .btn-large{
+	-webkit-animation: animLoadedContent 1s cubic-bezier(0.7,0,0.3,1) both;
+	animation: animLoadedContent 1s cubic-bezier(0.7,0,0.3,1) both;
+}
+
+.loaded .master .home-hello,
+.loaded .master .header .nav-wrapper {
+	-webkit-animation-delay: 0.1s;
+	animation-delay: 0.1s;
+}
+
+.loaded .master .home-hello h1 {
+	-webkit-animation-delay: 0.15s;
+	animation-delay: 0.15s;
+}
+
+.loaded .master .home-hello h4 {
+	-webkit-animation-delay: 0.2s;
+	animation-delay: 0.2s;
+}
+
+.loaded .master .home-hello .btn-large {
+	-webkit-animation-delay: 0.25s;
+	animation-delay: 0.25s;
+}
+
+@-webkit-keyframes animLoadedContent {
+	from { opacity: 0; -webkit-transform: translate3d(0,200px,0); }
+}
+
+@keyframes animLoadedContent {
+	from { opacity: 0; -webkit-transform: translate3d(0,200px,0); transform: translate3d(0,200px,0); }
+}
+
+/* Change layout class for header */
+.layout-switch .intro-header {
+	position: absolute;
+}
+
+/* No JS */
+.no-js .intro-header {
+	position: relative;
+	min-height: 0px;
+}
+
+.no-js .intro-header .intro-logo {
+	margin-top: 20px;
+	height: 180px;
+	opacity: 1;
+	-webkit-transform: none;
+	transform: none;
+}
+
+.no-js .intro-header .intro-logo svg path {
+	fill: #fff;
+}

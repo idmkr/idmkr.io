@@ -1,0 +1,9 @@
+#section0.section.active(data-anchor='hello')
+    video#video.vidfx(autoplay='', loop='', name='media')
+        source(src!="<?=$this->asset('video/contact.mp4')?>", type='video/mp4')
+        source(src!="<?=$this->asset('video/contact.webm')?>", type='video/webm')
+    .home-hello.center-align
+        h1.racingTitle Le formulaire de devis
+        h4 Pensé pour vous répondre efficacement
+        .row.center
+            a.waves-effect.waves-light.btn-large.racing(href='#projet') C'est parti

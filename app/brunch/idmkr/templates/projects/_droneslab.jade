@@ -1,0 +1,47 @@
+include /mixins/_case-study
+
++case-study("idmkr_bg.jpg")
+
+    +case-study-intro("Drones Lab")
+        p.left-align
+            | Ecole de formation au pilotage de drones. Ce projet a été réalisé en partenariat avec Nicolas Di Stefano, pilote professionnel depuis 25 ans et pilote de drone depuis que la législation francaise le permet.
+        p.right-align
+            | Actif depuis 2012, Drones Lab accueille tous les mois de nouveaux élèves. Nous sommes un partenaire exclusif sur ce projet, ayant réalisé tout le site internet avec une grande prise de risque et aucune garantie de revenus au lancement.
+
+
+    +case-study-intro-right({
+        year: new Date().getFullYear(),
+        keypoints: [
+            "Actif depuis 4 ans",
+            "Plus de 500 élèves formés",
+            "Revenu sharing"
+        ],
+        link: 'https://www.drones-lab.com'
+    })
+
+    +case-study-component({
+        title : "Drones Lab School",
+        screenshot : 'projects/dl/home(1).jpg',
+        keypoints : [
+            "PHP / JS / CSS",
+            "Design entièrement sur mesure",
+            "Architecture CMS sur mesure",
+            "Paiement en ligne"
+        ]
+    })
+        p Aujourd'hui Drones Lab fait vivre plusieurs formateurs pilotes, une chargée de communication, et notre équipe web au travers de revenus intéressés au CA.
+
+    +case-study-component({
+        title: "Référencement optimisé",
+        screenshot: 'projects/dl/formation.jpg',
+        keypoints: [
+            "1ère page Google",
+            "150 000 pages vues / an",
+            "Campagnes AdWords optimisées"
+        ]
+    })
+        p Egalement responsable de la partie référencement et communication web, le travail que nous avons accompli a très vite porté ses fruits, et constitue une de nos plus belles performances SEO. Nous avons atteint la 1ère page Google avec l'expression <i>formation drone</i> sur une grande partie de la france.
+
+
+
+    +case-study-footer

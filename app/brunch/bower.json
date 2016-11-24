@@ -1,0 +1,29 @@
+{
+  "name": "idmkr.io",
+  "description": "IDMKR developpers team website",
+  "main": "",
+  "authors": [
+    "Gael IDMKR <zzgael@gmail.com>"
+  ],
+  "license": "MIT",
+  "homepage": "idmkr.io",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^2.2.1",
+    "Materialize": "materialize#^0.97.5",
+    "outdated-browser": "^1.1.2",
+    "fullpage.js": "^2.7.8",
+    "pixelate": "*",
+    "hammerjs": "hammer.js#^2.0.6",
+    "covervid": "*",
+    "jquery-form": "^3.46.0",
+    "pickadate": "^3.5.6"
+  }
+}

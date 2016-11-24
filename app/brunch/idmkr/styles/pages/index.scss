@@ -1,0 +1,72 @@
+/* Backgrounds will cover all the section
+        * --------------------------------------- */
+.section{
+  background-size: cover;
+}
+.slide{
+  background-size: cover;
+}
+/* Video Background
+* --------------------------------------- */
+#video{
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  top:0;
+  right:0;
+  width: 100%;
+  height: 100%;
+  background-size: 100% 100%;
+  background-color: #050505; /* in case the video doesn't fit the whole page*/
+  background-position: center center;
+  background-size: contain;
+  object-fit: cover; /*cover video background */
+  z-index:3;
+}
+
+/*solves problem with overflowing video in Mac with Chrome */
+#section0{
+  overflow: hidden;
+}
+/* Defining each section background and styles
+* --------------------------------------- */
+#section1{
+  background-image: url('../img/back-idmkr.jpg');
+}
+#section2{
+  background-image: url('../img/team.jpg');
+}
+#section3{
+  background-image: url('../img/screen-ide.jpg');
+}
+#section4{
+  background-image: url('');
+}
+/*Adding background for the slides
+* --------------------------------------- */
+#slideTeam1{
+  /*background-image: url('../img/team.jpg');*/
+}
+#slideTeam2{
+  background-image: url('../img/desk-test.jpg');
+}
+#slideTeam3{
+  background-image: url('../img/desk-test.jpg');
+}
+#slideTeam4{
+  background-image: url('../img/desk-test.jpg');
+}
+
+
+#slideCase1 {
+  /*background-image: url('../img/Case.jpg');*/
+}
+#slideCase2 {
+  background-image: url('../img/screen-mm.jpg');
+}
+#slideCase3 {
+  background-image: url('../img/screen-tps.jpg');
+}
+#slideCase4 {
+  background-image: url('../img/screen-at.jpg');
+}

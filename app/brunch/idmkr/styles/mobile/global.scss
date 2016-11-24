@@ -1,0 +1,58 @@
+//BORDERS
+#top, #bottom {
+  background: #51326e;
+  background: -moz-linear-gradient(left, #51326e 0%, #fe7642 100%);
+  background: -webkit-gradient(linear, left top, right top, color-stop(0%, #51326e), color-stop(100%, #fe7642));
+  background: -webkit-linear-gradient(left, #51326e 0%, #fe7642 100%);
+  background: -o-linear-gradient(left, #51326e 0%, #fe7642 100%);
+  background: -ms-linear-gradient(left, #51326e 0%, #fe7642 100%);
+  background: linear-gradient(to right, #51326e 0%, #fe7642 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#51326e', endColorstr='#fe7642',GradientType=1 );
+}
+#left {
+  background: #51326e;
+}
+#right {
+  background: #fe7642;
+}
+#top, #bottom, #left, #right {
+  /*background: whitesmoke;*/
+  position: fixed;
+  z-index: 999;
+}
+#left, #right {
+  top: 0;
+  bottom: 0;
+  width: 6px;
+}
+#left {
+  left: 0;
+}
+#right {
+  right: 0;
+}
+#top, #bottom {
+  left: 0;
+  right: 0;
+  height: 6px;
+}
+#top {
+  top: 0;
+}
+#bottom {
+  bottom: 0px !important;
+}
+
+//RACING TITLE
+.racingTitle {
+  padding: .6rem 0 .8rem 0;
+  border-top: 0.22rem solid white;
+  border-bottom: 0.22rem solid white;
+  letter-spacing: .1rem;       
+  display: inline-block;
+  -moz-transform: rotate(-2deg) skewX(-4deg) skewY(-2deg);
+  -webkit-transform: rotate(-2deg) skewX(-4deg) skewY(-2deg);
+  -o-transform: rotate(-2deg) skewX(-4deg) skewY(-2deg);
+  -ms-transform: rotate(-2deg) skewX(-4deg) skewY(-2deg);
+  transform: rotate(-2deg) skewX(-4deg) skewY(-2deg);
+}

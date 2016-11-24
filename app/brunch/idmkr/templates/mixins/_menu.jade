@@ -1,0 +1,25 @@
+include /mixins/_extra-icons
+
+mixin menu(items)
+    nav.header
+        .nav-wrapper
+
+            a.button-collapse(href='/')
+                i.material-icons menu
+
+            ul.main-nav.right.hide-on-med-and-down
+                each item in items
+                    li(data-menuanchor=item)
+                        a(href='##{item}') #{item}
+
+                if items[0] != "home"
+                    li
+                        a.btn-flip(href='/',data-animation="27")
+                            .btn-flip-container
+                                i.material-icons keyboard_return
+                                +extra-icon("jumpingDots")
+
+            ul.side-nav.mobile-demo
+                each item in items
+                    li(data-menuanchor=item)
+                        a(href='##{item}') #{item}

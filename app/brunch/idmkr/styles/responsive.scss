@@ -1,0 +1,16 @@
+@media only screen and (max-width: 500px), only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  // #top, #bottom, #left, #right { display: none; }
+}
+@media only screen and (max-width : 1200px) {
+
+}
+@media only screen and (max-width : 1400px) {
+  #section3 .wall ul li{
+  	width: 200px;
+  	height: 200px;
+  }
+  // .content-contact .promo p:last-child{display:none;}
+}
+@media only screen and (min-width : 1400px) {
+  // .content-contact .promo p:last-child{display:block;}
+}

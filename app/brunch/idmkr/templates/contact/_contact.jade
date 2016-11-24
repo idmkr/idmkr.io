@@ -1,0 +1,32 @@
+#section2.section(data-anchor='contact')
+    .container
+        .row
+            form#form_project_step2.col.l12.m12.s12(method='post', action='/envoi-formulaire/contact')
+                fieldset
+                    legend.racing Informations de contact
+                    .row
+                        .input-field.col.l6.m6.s12
+                            input#first_name.validate(name='prenom', type='text')
+                            label(for='first_name') Prénom
+
+                        .input-field.col.l6.m6.s12
+                            input#last_name.validate(name='nom', type='text')
+                            label(for='last_name') Nom
+
+                        .input-field.col.l6.m6.s12
+                            input#email.validate(type='email', name='email')
+                            label(for='email') Email
+
+                        .input-field.col.l6.m6.s12
+                            input#telephone.validate(name='telephone', type='tel')
+                            label(for='telephone') Telephone
+
+                        .input-field.col.l12.m12.s12
+                            textarea#message.materialize-textarea(name='message', length='1500')
+                            label(for='message') Votre message
+
+                        .col.l6.m6.s12.left.errors-container
+                        .final.col.l6.m6.s12.right
+                            button.btn-large.waves-effect.waves-light.racing(type='submit', name='action')
+                                | Envoyer
+                                i.material-icons.right send

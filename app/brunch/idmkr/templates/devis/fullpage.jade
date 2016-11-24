@@ -1,0 +1,15 @@
+.pt-page
+    // Borders
+    #top
+    #right
+    #bottom
+    #left
+
+    include /mixins/_menu
+    +menu(['projet','vous'])
+
+    form#form_project(method='post', action='/envoi-formulaire/quote')
+        #fullpageDevis
+            include _hello
+            include _devis
+            include _contact

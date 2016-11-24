@@ -1,0 +1,21 @@
+// Hello
+#section0.section.active(data-anchor='home')
+    video#video(autoplay='', loop='')
+        source(src!="<?=$this->asset('video/hello.webm')?>", type='video/webm')
+        source(src!="<?=$this->asset('video/hello.mp4')?>", type='video/mp4')
+    .home-hello.center-align
+        h1.racingTitle Hello World
+        h4 Nous sommes une équipe d'experts en création web
+
+        p.cd-headline.push.center-align
+            span.cd-words-wrapper
+                b.is-visible
+                    span.text Notre relation va bien au-delà de la simple relation client ; c’est un partenariat durable basé sur la confiance et l’amitié.
+                    span.auteur Drones Lab
+                b
+                    span.text L’équipe est passionnée, dynamique et professionnelle. Elle nous propose des idées créatives et des solutions efficaces
+                b
+                    span.text Un soucis particulier du détail
+
+
+        a.waves-effect.waves-light.btn-large.racing(href='#force') Découvrir

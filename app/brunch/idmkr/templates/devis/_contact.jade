@@ -1,0 +1,35 @@
+#section2.section(data-anchor='vous')
+    .container
+        .row
+            div#form_project_step2.col.l12.m12.s12
+                fieldset
+                    legend.racing Informations de contact
+                    .row
+                        .input-field.col.l6.m6.s12
+                            input#first_name.validate(name='prenom', type='text')
+                            label(for='first_name') Prénom
+                        .input-field.col.l6.m6.s12
+                            input#last_name.validate(name='nom', type='text')
+                            label(for='last_name') Nom
+                        .input-field.col.l6.m6.s12
+                            input#email.validate(name='email', type='email')
+                            label(for='email') Email
+                        .input-field.col.l6.m6.s12
+                            input#telephone.validate(name='telephone', type='tel')
+                            label(for='telephone') Telephone
+                        .col.l6.m6.s12
+                            p Je souhaite être contacté par :
+                            p.col.l12.m12.s4
+                                input#tel(name='contact_method_tel', type='radio')
+                                label(for='tel') Téléphone
+                            p.col.l12.m12.s4
+                                input#mail(name='contact_method_email', type='radio')
+                                label(for='mail') Email
+                            p.col.l12.m12.s4
+                                input#any(name='contact_method_all', type='radio')
+                                label(for='any') Les deux
+                        .final.col.l6.m6.s12.center
+                            button.btn-large.waves-effect.waves-light.racing(type='submit', name='action')
+                                | Envoyer
+                                i.material-icons.right send
+

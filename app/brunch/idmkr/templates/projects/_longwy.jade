@@ -1,0 +1,29 @@
+include /mixins/_case-study
+
++case-study("screen-longwy.jpg")
+
+    +case-study-intro("Longwy")
+        p.left-align
+            | LONGWY Paris conjugue tradition et modernité. Nullement une rupture, nullement un cloisonnement des techniques, des univers : artisans de tradition et designers contemporains travaillent dans une symbiose admirable à la naissance de nouvelles œuvres originales, où le classique se mêle à la nouveauté.
+
+    +case-study-intro-right({
+        year: 2016,
+        keypoints: [
+            "Vente d'art",
+            "Design sur mesure",
+            "Plateforme Wordpress"
+        ],
+        link: 'http://longwy.paris/'
+    })
+
+    +case-study-component({
+        title: "Faïencerie d’art",
+        screenshot: 'projects/lo/home_longwy.jpg',
+        keypoints: [
+            "Site de luxe",
+            "Beaucoup de contenus"
+        ]
+    })
+        p LONGWY Paris, c’est la passion créative, l’excellence contemporaine et l’authenticité unique d’une faïencerie d’art, d’un style, d’une Maison.
+
+    +case-study-footer

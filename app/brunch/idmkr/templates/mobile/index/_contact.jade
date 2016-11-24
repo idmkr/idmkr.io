@@ -1,0 +1,32 @@
+include /mixins/_extra-icons
+
+#section4.section(data-anchor='contact')
+    .wrapper-contact.center-align
+        .row
+            h1.racingTitle Contact
+            .clearfix
+            .col.s12
+                .promo.mail.center-align
+                    a.btn-flip(data-animation='27', href='/contact')
+                        .btn-flip-container
+                            span.btn-floating.pt-btn.btn-large.waves-effect.waves-light
+                                i.material-icons email
+                            +extra-icon("jumpingDots")(class="btn-floating btn-large waves-effect waves-light btn-back")
+                    p.promo-caption
+                        a.brand-primary.racing(href='mailto:team@idmkr.io') Envoyez nous un message
+            .col.s12
+                .promo.devis.center-align
+                    a.btn-flip(data-animation='27', href='tel:0689116691')
+                        .btn-flip-container
+                            span.btn-floating.pt-btn.btn-large.waves-effect.waves-light
+                                i.material-icons phone
+                            +extra-icon("jumpingDots")(class="btn-floating btn-large waves-effect waves-light btn-back")
+                    p.promo-caption
+                        a.brand-secondary.racing.pt-btn(href='tel:0689116691') Appelez-nous dès maintenant !
+                    
+    footer.page-footer
+      .footer-copyright
+          .container.light.center-align
+              small
+                  | © 2016 Tous droits réservés. Idmkr ♥ 
+                  a(href='http://materializecss.com/', target='_blank') Materialize

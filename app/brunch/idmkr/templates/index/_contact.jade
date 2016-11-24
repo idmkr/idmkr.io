@@ -1,0 +1,82 @@
+include /mixins/_extra-icons
+
+#section4.section(data-anchor='contact')
+    .content-contact.center-align
+        .row
+            h1.racingTitle Contact
+            .clearfix
+            .col.l6.m6.s12
+                .promo.mail.center-align
+                    a.btn-flip(data-animation='27', href='/contact')
+                        .btn-flip-container
+                            span.btn-floating.pt-btn.btn-large.waves-effect.waves-light
+                                i.material-icons email
+                            +extra-icon("jumpingDots")(class="btn-floating btn-large waves-effect waves-light btn-back")
+                    p.promo-caption
+                        a.brand-primary.racing(href='mailto:team@idmkr.io') Envoyez nous un message
+                    p
+                        | Un besoin urgent de réponses ?
+                        br
+                        | Allez à l'essentiel ou faites-vous rappeler en cliquant sur le bouton ci-dessus.
+            .col.l6.m6.s12
+                .promo.devis.center-align
+                    a.btn-flip(data-animation='27', href='/devis')
+                        .btn-flip-container
+                            span.btn-floating.pt-btn.btn-large.waves-effect.waves-light
+                                i.material-icons forum
+                            +extra-icon("jumpingDots")(class="btn-floating btn-large waves-effect waves-light btn-back")
+
+                    p.promo-caption
+                        a.brand-secondary.racing.pt-btn Faites deviser votre projet
+                    p
+                        | Un formulaire conçu pour des besoins précis.
+                        br
+                        | Cliquez ci-dessus si vous souhaitez obtenir un devis rapide.
+    .map-container
+        #map-canvas
+    footer.page-footer
+        //
+          .container
+            .row
+              .col.l6.m6.s12
+                p.center-align
+                  span.racing
+                    | Discutons autour d'un
+                    i.mdi-maps-local-cafe
+                  br
+                  |           1 boulevard Carabacel, NICE
+                  br
+                  |           Bureau ouvert de 8h00 à 20h00
+                  br
+              .col.l6.m6.s12.center-align
+                | idmkr, une équipe de freelances spécialisés dans la programmation et le design web.
+                ul
+                  li.col.l4.m4.s12
+                    h5
+                      | Moins cher
+                      i.mdi-hardware-keyboard
+                    p.texte.light Et souvent mieux
+                  li.col.l4.m4.s12
+                    h5
+                      | Bavards
+                      i.mdi-action-perm-phone-msg
+                    p.texte.light Et ouverts à l'échange
+                  li.col.l4.m4.s12
+                    h5
+                      | 82
+                      i.mdi-action-account-balance-wallet
+                    p.texte.light Projets terminés
+                  li
+                    a.grey-text.text-lighten-3(href='#!') Facebook
+                  li
+                    a.grey-text.text-lighten-3(href='#!') Twitter
+                  li
+                    a.grey-text.text-lighten-3(href='#!') Github
+                  li
+                    a.grey-text.text-lighten-3(href='#!') Codepen
+
+        .footer-copyright
+            .container.light.center-align
+                small
+                    | © 2016 Tous droits réservés. Idmkr ♥
+                    a(href='http://materializecss.com/', target='_blank') Materialize

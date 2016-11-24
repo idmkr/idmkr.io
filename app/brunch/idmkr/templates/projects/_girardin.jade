@@ -1,0 +1,31 @@
+include /mixins/_case-study
+
++case-study("girardin_bw.jpg")
+
+    +case-study-intro("Girardin")
+        p.left-align
+            | Girardin est un site de services et produits pétroliers.
+            | Le site web vise les particuliers et professionnels souhaitant commander par internet n'importe quelle quantité de fuel. Un formulaire d'achat est disponible, avec calcul en temps réel du prix par quantité.
+
+    +case-study-intro-right({
+        year: 2015,
+        keypoints: [
+            "E-commerce customisé",
+            "Vente de fuel",
+            "Plateforme Prestashop"
+        ],
+        link: 'http://fuel.girardin.fr'
+    })
+
+    +case-study-component({
+        title: "Vente de fuel",
+        screenshot: 'projects/gi/home(2).jpg',
+        keypoints: [
+            "Design entièrement sur mesure",
+            "Module javascript d'autocomplétion",
+            "Calcul de la disponibilité"
+        ]
+    })
+        p Le formulaire d'achat de fuel a été construit sur mesure, avec pour objectif de simplifier au maximum le processus. Ainsi le code postal et la ville s'autocomplètent lorsque l'on commence à saisir les champs.
+
++case-study-footer

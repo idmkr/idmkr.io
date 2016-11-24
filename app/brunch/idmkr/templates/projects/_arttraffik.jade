@@ -1,0 +1,33 @@
+include /mixins/_case-study
+
++case-study("screen-at.jpg")
+
+    +case-study-intro("Art Traffik")
+        p.left-align
+            | ArtTraffik est une plateforme de vente d'art basée sur Prestashop. Un espace personnel permet la création de collection virtuelle. De nombreux artistes, classés en différentes catégories sont recensés sur cette plateforme.
+        p.right-align
+            | Ce site vise une clientèle de spécialisée dans l'achat d'art, avec des artistes et des œuvres triés sur le volet.
+
+
+    +case-study-intro-right({
+        year: 2015,
+        keypoints: [
+            "Marketplace",
+            "Vente d'oeuvre d'arts",
+            "E-commerce Prestashop"
+        ],
+        link: 'http://www.art-traffik.com/'
+    })
+
+    +case-study-component({
+        title: "Art Traffik",
+        screenshot: 'projects/at/home.jpg',
+        keypoints: [
+            "Design entièrement sur mesure",
+            "Architecture CMS customisée",
+            "Fonctionnalité In situ"
+        ]
+    })
+        p Chaque œuvre peut être visualisée in situ, dans un environnement typique de salon, pour se rendre compte de sa taille et de son rendu avant son achat
+
++case-study-footer

@@ -1,0 +1,42 @@
+include /mixins/_case-study
+
++case-study("screen-hippo.jpg")
+
+    +case-study-intro("Hippopotamus")
+        p.left-align
+            | L'Hippopotamus de Cambrai nous a choisi comme partenaire il y a plus de 5 ans. Nous avons réalisé leur site mobile et nous les accompagnons dans leur communication sociale.
+            | La page Facebook de l'Hippopotamus de Cambrai a aujourd'hui une grande base de fans, nourrie depuis par une communication efficace et des applications originales.
+
+    +case-study-intro-right({
+        year: 2015,
+        keypoints: [
+            "Site Mobile WebApp",
+            "Unique parmis les franchises",
+            "1ère page Facebook Hippopotamus après la page nationale"
+        ],
+        link: 'http://www.hippopotamus-cambrai.mobi/'
+    })
+
+    +case-study-component({
+        title: "Hippopotamus Cambrai",
+        screenshot: 'projects/hi/home-hippo.jpg',
+        screenshot2: 'projects/hi/menu-hippo.jpg',
+        keypoints: [
+            "Premier site mobile Hippopotamus",
+            "Réalisé avec une version prémature de jQuery Mobile"
+        ]
+    })
+        p Le site mobile est devenu une plateforme de communication et d'information. On y retrouve les menus et les promotions du moment, mais aussi des accès à des services spéciaux comme la visite du restaurant en 360°.
+
+    +case-study-component({
+        title: "Page Facebook",
+        screenshot: 'projects/hi/facebook.jpg',
+        keypoints: [
+            "Plus de 6500 fans sur Facebook",
+            "Une participation active de la communauté"
+        ]
+    })
+        p La page Facebook de l'Hippopotamus de Cambrai est unique en son genre : seule page Facebook de la franchise à cumuler plusieurs milliers de fans, elle est également pionnière en terme de nouveautés marketing et sociale.
+        p Les applications Facebook ( à l'époque ou elle étaient d'actualités ) permettaient de jouer à des jeux, gagner des cadeaux, et de se renseigner de manière plus ludique.
+
+    +case-study-footer

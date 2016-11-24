@@ -1,0 +1,75 @@
+#section1.section(data-anchor='projet')
+    .container
+        .row
+            div#form_project_step1.col.l12.m12.s12
+                fieldset
+                    legend.racing A propos de votre projet
+                    .row
+                        .input-field.col.l8.m6.s12
+                            input#project_name.validate(name='denomination', type='text')
+                            label(for='project_name') Dénomination du projet
+                        .input-field.selector.col.l4.m6.s12
+                            select.validate(name='type')
+                                option(value='', disabled='', selected='') Choisissez..
+                                option Site e-commerce
+                                option Marketplace
+                                option Réseau social
+                                option Application mobile
+                                option Site vitrine
+                                option Reprise d'un site existant
+                                option AdWords Script
+                                option Scrapping
+                                option Autre
+                            label Type de projet
+                        .input-field.col.l12.m12.s12
+                            textarea#message.validate.materialize-textarea(name='description', length='1500')
+                            label(for='message') Décrivez le projet en quelques mots
+                        .col.l4.m4.s12
+                            p Fonctionnalités ou services notables :
+                            p.col.l12.m12.s2
+                                input#international(type='checkbox', value='Refonte')
+                                label(for='international') Multilingue
+                            p.col.l12.m12.s2
+                                input#paiement(type='checkbox', value='Système de paiement sécurisé')
+                                label(for='paiement') Système de paiement sécurisé
+                            p.col.l12.m12.s2
+                                input#reservation(type='checkbox', value='Système d\'administration')
+                                label(for='reservation') Système d'administration
+                            p.col.l12.m12.s2
+                                input#refnat(type='checkbox', value='Référencement naturel optimisé')
+                                label(for='refnat') Référencement naturel optimisé
+                            p.col.l12.m12.s2
+                                input#seo(type='checkbox', value='Accompagnement SEO/Adwords')
+                                label(for='seo') Accompagnement SEO/Adwords
+                        .col.l4.m4.s12
+                            p &nbsp;
+                            p.col.l12.m12.s2
+                                input#da(type='checkbox', value='Création de marque &amp; charte graphique')
+                                label(for='da') Création de marque &amp; charte graphique
+                            p.col.l12.m12.s2
+                                input#refonte(type='checkbox', value='Refonte graphique')
+                                label(for='refonte') Refonte graphique
+                            p.col.l12.m12.s2
+                                input#responsive(type='checkbox', value='Responsive design')
+                                label(for='responsive') Responsive design
+                            p.col.l12.m12.s2
+                                input#networks(type='checkbox', value='Accompagnement Réseaux Sociaux')
+                                label(for='networks') Accompagnement Réseaux Sociaux
+                            p.col.l12.m12.s2
+                                input#creation(type='checkbox', value='Création d\'un Prototype')
+                                label(for='creation') Création d'un Prototype
+                        .input-field.selector.selector-down.col.l4.m4.s12
+                            select.validate
+                                option(value='', disabled='', selected='') Choisissez..
+                                option 2 semaines
+                                option 1 mois
+                                option 3 mois
+                                option 6 mois
+                                option 1 an
+                            label Deadline de livraison du projet
+                        .last-step
+                            a.btn-large.waves-effect.waves-light.racing(href='#vous')
+                                | Suite
+                                i.material-icons.right keyboard_arrow_down
+                            span.handwriting Plus qu'une étape !
+                        .col.l6.m6.s12.left.errors-container

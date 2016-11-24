@@ -1,0 +1,277 @@
+include /mixins/_extra-icons
+
+#section2.section(data-anchor='team')
+    #slideTeam1.slide.active
+        .container.center-align
+            .row
+                h1.racingTitle Team d'élite
+                .clearfix
+                .together.zone1.col.l6.m6.s12
+                    h3.racing.xracingTitle.left-align
+                        | Une équipe
+                        br
+                        | à toute épreuve
+                    p.texte.left-align
+                        | Formé il y a 6 ans, IDMKR ( prononcé "idea maker" ) est aujourd'hui composé de 4
+                        span.brand-secondary programmeurs
+                        |  et 2
+                        span.brand-secondary créatifs
+                        | .
+                        |                         Nous parlons tous les langages web avec une longueur d'avance :
+                        |                         HTML5, CSS3, PHP7, MariaDB & NoSQL, Node/JS, Python.
+                        br
+                        | En tant qu'artisans passionés, nous privilégions la
+                        span.brand-secondary nouveauté
+                        |  et les
+                        span.brand-secondary challenges
+                        |  techniques.
+                        br
+                        | Laravel5 ( et beaucoup de ses dérivés ), Django, Wordpress, Prestashop n'ont plus aucun secret pour nous.
+                    //.left
+                        a.waves-effect.waves-light.btn-large.racing(href='') Nos avantages
+                    //
+                      <div class="faces left">
+                      <a href="#!" id="goGa" data-fullpage-move='{"to":["team",1]}' class="btn-floating btn-large">
+                      <i class="mdi-notification-phone-in-talk"></i>
+                      <span class="handwriting">Gaël</span>
+                      </a>
+                      <a href="#!" id="goFl" class="btn-floating btn-large" data-fullpage-move='{"to":["team",2]}'>
+                      <i class="mdi-hardware-keyboard"></i>
+                      <span class="handwriting">Florent</span>
+                      </a>
+                      <a href="#!" id="goPe" class="btn-floating btn-large" data-fullpage-move='{"to":["team",3]}'>
+                      <i class="mdi-content-create"></i>
+                      <span class="handwriting">Pédro</span>
+                      </a>
+                      </div>
+                    p#goRight.crosslink.right(data-fullpage-move='slideRight') Découvrir la team
+                    // <div class="clearfix"></div>
+                .together.zone2.col.l6.m6.s12.right
+                    h3.racing.xracingTitle.right-align
+                        | Des alliés
+                        br
+                        | sur tous les fronts
+                    p.texte.right-align
+                        | Direction Artistique, Référencement, Identité Web, Social management : nous avons construit une toile interne de partenaires spécialisés de Nice à Paris.
+                        br
+                        | Nous sommes les conseillers privilégiés de vos projets ambitieux.
+                        br
+                        | Nous sommes le pilier technique et organisationnel qui concrétise votre projet.
+                        br
+                        br
+                    p.cd-headline.racing.push.right-align
+                        | Une offre personnalisée, que vous soyez
+                        span.cd-words-wrapper.brand-primary
+                            b.is-visible Une société
+                            b Un entrepreneur
+                            b Une association
+                            b Un auto-entrepreneur
+                            b Un particulier
+                            b Barack Obama
+                    //
+                      <p class="right-align">
+                      <a href="/agence" class="waves-effect waves-light btn-large racing">Nos avantages</a>
+                      </p>
+    #slideTeam2.slide
+        .container
+            .row
+                .presentation_team.col.l2.m3.s2
+                    .square
+                        img(src='/img/gael.jpg')
+                    h2 Gael
+                    blockquote
+                        | Fonctions
+                        span Product Leader / Développeur
+                        br
+                        |                         Age
+                        span #{new Date().getFullYear()-1988}
+                        br
+                        |                         Expérience
+                        span #{new Date().getFullYear()-2006} ans
+                        br
+                        |                         Plutôt
+                        span Rêveur et Perfectionniste
+                .description_team.col.l5.m9.s10
+                    p.right-align
+                        | " Tête communicante du groupe, je traduis les besoins et m'assure de la qualité finale du produit.
+                        br
+                        | Programmeur professionnel depuis l'âge de 18 ans, j'ai accumulé les expériences en open-space et en freelance.
+                        br
+                        | Je travaille surtout par plaisir, et je pense que c'est la meilleure facon de produire des bons résultats.
+                        br
+                        | Je suis fier de cette équipe, de notre travail, et du lien spécial qu'on a développé. "
+                    p.handwriting.right-align Gaël
+                .competences_team.col.l5.m12.s12
+                    h5.racing Compétences
+                    ul
+                        li
+                            i.material-icons.left flash_on
+                            |  Gestion & conception de projet
+                        li
+                            i.material-icons.left flash_on
+                            |  Organisation interne & externe
+                        li
+                            i.material-icons.left flash_on
+                            |  Maitrise de PHP5/PHP7 / Python / JS / CSS3
+                        li
+                            i.material-icons.left flash_on
+                            |  Symfony / Laravel / jQuery / Vue.js / React
+                        li
+                            i.material-icons.left flash_on
+                            |  CMS divers, préférence pour Wordpress
+                        li
+                            i.material-icons.left flash_on
+                            |  Applis mobiles avec Ionic Framework / Phonegap / Cordova
+                        li
+                            i.material-icons.left flash_on
+                            |  Python : scrapping, machine learning
+                        li
+                            i.material-icons.left flash_on
+                            |  Travail des finitions, amour de l'optimisation
+                    p.left-align.picto_team
+                        a.email.btn-floating.waves-effect.waves-light
+                            i.material-icons email
+                        span.handwriting gael[a]idmkr.io
+                        br
+                        a.phone.btn-floating.waves-effect.waves-light(href='tel:0689116691')
+                            i.material-icons phone
+                        span.handwriting 06 89 11 66 91
+                        br
+                        a.btn-floating.waves-effect.waves-light(href='https://www.linkedin.com/in/gael-debost-a4297228', target='_blank')
+                            +extra-icon('linkedin')
+                        span.handwriting Profil Linkedin  
+    #slideTeam3.slide
+        .container
+            .row
+                .presentation_team.col.l2.m3.s2
+                    .square
+                        img(src='img/florent.jpg')
+                    h2 Flo
+                    blockquote
+                        | Poste
+                        span Project Manager / Développeur
+                        br
+                        |                         Age
+                        span #{new Date().getFullYear()-1985}
+                        br
+                        |                         Ancienneté
+                        span 6 ans
+                        br
+                        |                         Plutôt
+                        span Efficace et Pragmatique
+                .description_team.col.l5.m9.s10
+                    p.right-align
+                        | " Après un diplôme d'ingénieur en vision industrielle, je me dirige vers le développement web, attiré par les nouvelles technologies, l'innovation et les défis économiques du secteur.
+                        br
+                        | Grâce à ma formation orientée développement et qualité logiciel ainsi qu'à ses expériences professionnelles en gestion de projet,
+                        |                         je suis parfaitement à l'aise pour mener à bien n'importe quel projet web moderne. "
+                    p.handwriting.right-align Florent
+                .competences_team.col.l5.m12.s12
+                    h5.racing Compétences
+                    ul
+                        li
+                            i.material-icons.left flash_on
+                            |  PHP/ HTML / CSS / JS / C++ / Python
+                        li
+                            i.material-icons.left flash_on
+                            |  PHP : Zend, Laravel, POO, Pattern design
+                        li
+                            i.material-icons.left flash_on
+                            |  Qualité logiciel
+                        li
+                            i.material-icons.left flash_on
+                            |  CMS de prédilection : Prestashop
+                        li
+                            i.material-icons.left flash_on
+                            |  Rédaction de cahiers des spécifications et cahier des charges
+                        li
+                            i.material-icons.left flash_on
+                            |  Pragmatif et intuitif dans le choix des solutions
+                        li
+                            i.material-icons.left flash_on
+                            |  Efficatité et Prise de décision
+                    p.left-align.picto_team
+                        a.email.btn-floating.waves-effect.waves-light
+                            i.material-icons email
+                        span.handwriting florent[a]idmkr.io
+                        br
+                        a.phone.btn-floating.waves-effect.waves-light(href='tel:0618707292')
+                            i.material-icons phone
+                        span.handwriting 06 18 70 72 92
+                        br
+                        a.btn-floating.waves-effect.waves-light(href='https://www.linkedin.com/in/florent-roche-479157119', target='_blank')
+                            +extra-icon('linkedin')
+                        span.handwriting Profil Linkedin   
+    #slideTeam4.slide
+        .container
+            .row
+                .presentation_team.col.l2.m3.s2
+                    .square
+                        img(src='img/pedro.jpg')
+                    h2 Pédro
+                    blockquote
+                        | Poste
+                        span Project Designer / Intégrateur
+                        br
+                        |                         Age
+                        span #{new Date().getFullYear()-1986}
+                        br
+                        |                         Ancienneté
+                        span 4 ans
+                        br
+                        |                         Plutôt
+                        span Réactif et Flexible
+                .description_team.col.l5.m9.s10
+                    p.right-align
+                        | " Graphiste de formation et de coeur, je suis également devenu intégrateur/developpeur Front-end par passion.
+                        br
+                        |                         J'ai travaillé pour des agences web Parisiennes avant de m'installer à Nice en tant qu'indépendant.
+                        br
+                        |                         Je complète les besoins de l'équipe sur le plan de la création graphique, déclinaisons, intégration et community management. "
+                    p.handwriting.right-align Pédro
+                .competences_team.col.l5.m12.s12
+                    h5.racing Compétences
+                    ul
+                        li
+                            i.material-icons.left flash_on
+                            |  Direction artisitique & conception
+                        li
+                            i.material-icons.left flash_on
+                            |  Intégration & Dev. Front-end
+                        li
+                            i.material-icons.left flash_on
+                            |  HTML5/CSS3, Scss/Less & Js/Jquery
+                        li
+                            i.material-icons.left flash_on
+                            |  Laravel, BonesWP, Foundation, etc.
+                        li
+                            i.material-icons.left flash_on
+                            |  Material Design Lite, Bootstrap 4, Boilerplate
+                        li
+                            i.material-icons.left flash_on
+                            |  CMS de prédilection : Wordpress & Prestashop
+                        li
+                            i.material-icons.left flash_on
+                            |  UX, Responsive & web mobile, ergonomie
+                        li
+                            i.material-icons.left flash_on
+                            |  Création graphique digitale, print & intéractive
+                        li
+                            i.material-icons.left flash_on
+                            |  Identité digitale & Community management
+                        li
+                            i.material-icons.left flash_on
+                            |  Soucis du détail
+                    p.left-align.picto_team
+                        a.email.btn-floating.waves-effect.waves-light
+                            i.material-icons email
+                        span.handwriting pedro[a]idmkr.io
+                        br
+                        a.phone.btn-floating.waves-effect.waves-light(href='tel:0623601827')
+                            i.material-icons phone
+                        span.handwriting 06 23 60 18 27
+                        br
+                        a.btn-floating.waves-effect.waves-light(href='https://www.linkedin.com/in/pierre-eric-beaudraps-965a6020', target='_blank')
+                            +extra-icon('linkedin')
+                        span.handwriting Profil Linkedin    
+                        

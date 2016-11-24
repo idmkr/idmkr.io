@@ -1,0 +1,51 @@
+include /mixins/_case-study
+
++case-study("idmkr_bg.jpg")
+
+    +case-study-intro("IDMKR", true)
+        p.left-align
+            | Nous avons réalisé plus de 50 projets sur des thèmes très variés. Du simple site vitrine au site sur mesure le plus complexe; de la simple application html5 à celle 100% native la plus élaborée; nous codons tout ce qui est possible.
+        p.right-align
+            | Nous ne cherchons pas simplement à réaliser des projets en tant que prestataires. Nous savons depuis longtemps que l'avenir se jouera avec des partenariats et des revenus récurents.
+            | Pour cette raison, nous privilégions fortement les projets dans lequel nous croyons personnellement. La seule façon de bien vous accompagner est de participer à votre projet activement.
+
+
+    +case-study-intro-right({
+        year: new Date().getFullYear(),
+        keypoints: [
+            "Cinq freelances",
+            "Trois développeurs",
+            "Deux graphistes",
+            "8 ans d'expérience en moyenne",
+            "Priorise la qualité",
+            "Innove en permanence"
+        ]
+    })
+
+    +case-study-component({
+        title : "Sites E-Commerce",
+        screenshot : 'projects/idmkr_ecommerces.jpg',
+        keypoints : [
+            "Prestashop, Magento, Sur mesure",
+            "Classique ou Marketplace",
+            "Excellent rapport qualité/prix"
+        ]
+    })
+        p
+            | Que ce soit sur Prestashop ou sur Magento, nous prenons toutes les étapes du projet en charge, de la conception jusqu'à la livraison. Nous développons également des modules à la demande.
+        
+            | Nous avons également l'expérience des sites marketplace complets, ayant développé Ton Petit Sommelier avec gestion des commissions et inscription vendeur automatisée.
+
+        p Echantillon choisi :
+            ul
+                li
+                    a(href='https://www.tonpetitsommelier.com',target='_blank') www.tonpetitsommelier.com
+                li
+                    a(href='http://fuel.girardin.com',target='_blank') fuel.girardin.com
+                li
+                    a(href='http://www.kapricieusesandco.com/',target='_blank') www.kapricieusesandco.com
+                li
+                    a(href='http://lamaisonduyeti.fr/',target='_blank') www.lamaisonduyeti.fr
+
+
+    +case-study-footer

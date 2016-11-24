@@ -1,0 +1,71 @@
+include /mixins/_case-study
+
++case-study("screen-tps.jpg")
+
+    +case-study-intro("Ton Petit Sommelier")
+        p.left-align
+            | Cet E-commerce Prestashop  est une place de marché de vente de vins. Les vignerons y publient leur catalogue via un espace vigneron dedié, et sont automatiquement commissionnés via l’API de paiement MangoPay.
+        p.right-align
+            | Le public visé est large, de l’expert en vin jusqu’au débutant. Un assistant sommelier virtuel, Ernest, guide les indécis dans leur choix du vin idéal pour leur soirée entre potes ou dîner en famille.
+
+
+    +case-study-intro-right({
+        year: 2015,
+        keypoints: [
+            "E-commerce Maketplace",
+            "Material design",
+            "Assistant virtuel",
+            "Nombreuses APIs"
+        ],
+        link : 'https://www.tonpetitsommelier.com'
+    })
+
+    +case-study-component({
+        title : "E-commerce haut de gamme",
+        screenshot : 'projects/tps-home.jpg',
+        keypoints : [
+            "Prestashop customisé en profondeur",
+            "100% Marketplace avec commissionnement automatisé",
+            "Expertise sur plusieurs fronts"
+        ]
+    })
+        p En tant que pilier technique central du projet, nous apportons à Ton Petit Sommelier une qualité de  création, de code, et une expertise sur tous les sujets qui toucheront de près ou de loin au site web.
+        p Notre implication se traduit souvent par des initiatives et des conseils avisés en bonne connaisance de cause. Nous participons activement à toutes les réunions avec les équipes externes SEO, AdWords, Graphisme, Community Management.
+
+
+    +case-study-component({
+        title : "Marketplace & comptabilité automatisée",
+        screenshot : 'projects/tps-comptabilite.png',
+        keypoints : [
+            "Marketplace autonome","Comptabilité fine","Du consommateur au vigneron"
+        ]
+    })
+        p
+            | L’implémentation d’un marketplace sur Prestashop est un travail d’expertise. Il faut parfaitement connaître l’architecture en place et bien choisir les modules et librairies de code.
+            | Le résultat est un système parfaitement autonome, permettant une liaison directe entre le consommateur et les vignerons. Les commissions du site sont automatiquement calculées en fonction de chaque quantité de produit.
+
+        p
+            | La comptabilité d’un marketplace requiert des réglages fins, une sécurité bêton et des exceptions particulières au domaine d’activité. Aucune marge d’erreur possible !
+            | La phase d'inscription du vigneron est strictement contrôlée via le processus de validation "KYC" (Know Your Customer).
+
+    +case-study-component({
+        title: "Ernest",
+        screenshot: 'projects/tps-ernest.jpg',
+        keypoints: [
+            "Assistant Virtuel", "Machine Learning", "Conseils avisés"
+        ]
+    })
+        p Ernest est assistant sommelier virtuel. En répondant à quelques questions, il est capabable de proposer trois vins finement sélectionnés par un algorithme dedié, concu sur mesure.
+
+        p Les critères de sélection sont issus de concepts "Machine Learning", ainsi qu'avec l'aide de plus de 50 000 notes pré-générées grâce à des véritables avis d'experts sommeliers.
+
+    +case-study-component({
+        title: "Espace Vigneron",
+        screenshot: 'projects/tps-espace-vigneron.jpg',
+        keypoints: [
+            "Autonomie marketplace", "Gestion catalogue & factures", "Admin Prestashop"
+        ]
+    })
+        p L'Espace Vigneron a été constitué à partir de l'administration native de Prestashop. Elle permet à un vigneron de pouvoir librement administrer son catalogue produit et ses informations personnelles.
+
+    +case-study-footer

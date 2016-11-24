@@ -1,0 +1,655 @@
+/* Sections */
+
+body {
+  background-color: black;
+}
+
+// HELLO
+#section0 {
+  .home-hello,
+  .contact-hello {
+    position: relative;
+    z-index: 1000;
+
+    h1 {
+    }
+    h4 {
+      // font-size: 3.22rem;
+      // font-family: 'Mr Dafoe', sans-serif;
+      font-weight: 900;
+    }
+  }
+  .btn-large {
+    margin-top: 3rem;
+  }
+
+  .cd-words-wrapper {
+    margin-top: 15px;
+
+    b {
+      font-size:16px;
+      position: absolute;
+      font-weight: 300;
+      color: rgba(222, 222, 222, .99);
+
+      span.text{
+        &:after,
+        &:before{
+          display: inline-block;
+          padding: 0 3px;
+          font-size: 32px;
+          font-weight: 400;
+          color: rgba(222, 222, 222, .66);
+          font-family: 'Alex Brush', cursive;
+
+        }
+        &:before{
+          content: "“";
+        }
+        &:after{
+          content: "”";
+        }
+      }
+      span.auteur{
+        color: rgba(222, 222, 222, .33);
+      }
+      
+      &.is-visible {
+        position: relative;
+      }
+    }
+  }
+}
+
+// FORCE
+#section1 {
+  color: white;
+
+  h1.racingTitle {
+    margin-bottom: 60px;
+  }
+  .mask-bgrd {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #111111;
+    background-size: cover;
+    opacity: 0;
+    transition: opacity 400ms ease-in;
+
+    &.showed {
+      opacity: 1;
+      transition: opacity 400ms ease-out;
+    }
+  }
+  .force {
+    padding: 1rem;
+    position: relative;
+
+    p {
+      min-height: 100px;
+    }
+    blockquote {
+      display: inline-block;
+      vertical-align: top;
+      width: 45%;
+      border-left: none;
+      padding-left: 0;
+      margin-top: 1.5rem;
+      ul {
+        margin: 0;
+        li {
+          font-style: italic;
+          font-weight: 300;
+          color: rgba(222, 222, 222, .66);
+          font-size: .9rem;
+          &:nth-child(1) {
+            font-weight: 500;
+            text-transform: uppercase;
+            font-style: normal;
+            color: white;
+            margin-bottom: 1.2rem;
+            border-top: 2px solid #51326e;
+            padding-top: .8rem;
+            font-size: inherit;
+            width: 80px;
+          }
+        }
+      }
+      &:last-child ul li:nth-child(1) {
+        width: 55px;
+        border-top: 2px solid #fe7642;
+      }
+    }
+    &.conseil h3:before,
+    &.crea h3:before,
+    &.launch h3:after,
+    &.launch h3:before {
+      opacity: .11;
+      transition: opacity 300ms ease-out;
+    }
+    &.conseil h3:before {
+      content: "";
+      position: absolute;
+      width: 240px;
+      height: 240px;
+      border-radius: 100%;
+      top: 50%;
+      left: 50%;
+      margin: -90px 0 0 -120px;
+      border: 2px dashed rgba(222, 222, 222, 1);
+    }
+    &.crea h3:before {
+      content: "";
+      position: absolute;
+      width: 240px;
+      height: 240px;
+      top: 50%;
+      left: 50%;
+      margin: -90px 0 0 -120px;
+      border: 2px dashed rgba(222, 222, 222, 1);
+    }
+    &.launch h3 {
+      &:after {
+        content: "";
+        position: absolute;
+        width: 270px;
+        height: 2px;
+        top: 50%;
+        left: 50%;
+        margin-top: 30px;
+        -moz-transform: rotate(-55deg);
+        -webkit-transform: rotate(-55deg);
+        -o-transform: rotate(-55deg);
+        -ms-transform: rotate(-55deg);
+        transform: rotate(-55deg);
+        margin-left: -210px;
+        border-top: 2px dashed rgba(222, 222, 222, 1);
+      }
+      &:before {
+        content: "";
+        position: absolute;
+        width: 270px;
+        height: 2px;
+        top: 50%;
+        left: 50%;
+        margin-top: 30px;
+        border-top: 2px dashed rgba(222, 222, 222, 1);
+        -moz-transform: rotate(55deg);
+        -webkit-transform: rotate(55deg);
+        -o-transform: rotate(55deg);
+        -ms-transform: rotate(55deg);
+        transform: rotate(55deg);
+        margin-left: -55px;
+      }
+    }
+    &:hover {
+      &.conseil h3:before,
+      &.crea h3:before,
+      &.launch h3:after,
+      &.launch h3:before {
+        opacity: .44;
+        transition: opacity 300ms ease-in;
+      }
+    }
+  }
+}
+
+// TEAM
+#section2 {
+
+  h1.racingTitle {
+    margin-bottom: 60px;
+  }
+  #goRight {
+    cursor: pointer;
+    margin-top: 2.5rem;
+  }
+  // PREMIER ECRAN
+  .together {
+    p.texte {
+      color: rgba(222, 222, 222, .66);
+      font-weight: 300;
+    }
+    &.zone1 {
+      position: relative;
+      top: -30px;
+      padding-right: 2.22rem;
+      span.brand-secondary{padding-left: 3px;}
+      .faces {
+        margin-top: 1.5rem;
+        a {
+          margin: 0 .75rem;
+          text-align: center;
+          position: relative;
+          overflow: inherit !important;
+
+          // img{max-width:50px;}
+          span {
+            position: absolute;
+            top: 25px;
+            display: inline-block;
+            left: 0;
+            width: 50px;
+            font-size: 14px;
+            font-weight: 400;
+            text-transform: initial;
+            color: rgba(222, 222, 222, 1);
+            transition: all 0.35s;
+            opacity: 0;
+          }
+          &:hover span {
+            top: 30px;
+            opacity: 1;
+          }
+        }
+      }
+    }
+    &.zone2 {
+      position: relative;
+      top: 30px;
+      padding-left: 2.22rem;
+      .cd-words-wrapper {
+        display: inline-block;
+        position: relative;
+        text-align: left;
+        b {
+          display: inline-block;
+          white-space: nowrap;
+          font-size:17px;
+          position: absolute;
+          left: 3px;
+          top: 1px;
+          &.is-visible {
+            position: relative;
+          }
+        }
+      }
+    }
+
+  }
+
+  // AFFICHAGE UN MEMBRE
+  .presentation_team {
+    padding: 0;
+
+    .square {
+      width: 120px;
+      height: 120px;
+      position: relative;
+      overflow: hidden;
+      border: 5px solid rgba(222, 222, 222, 0);
+      background-color: rgba(222, 222, 222, 0.33);
+      -moz-transform: rotate(-45deg);
+      -webkit-transform: rotate(-45deg);
+      transform: rotate(-45deg);
+      cursor: pointer;
+      margin-left: -3.8rem;
+      img {
+        position: absolute;
+        top: -25px;
+        left: -25px;
+        -moz-transform: rotate(45deg);
+        -webkit-transform: rotate(45deg);
+        transform: rotate(45deg);
+        -webkit-filter: grayscale(0);
+        transition: all 0.35s;
+      }
+      &:hover img {
+        -webkit-filter: grayscale(1);
+      }
+    }
+
+    h2 {
+      margin: -2.5rem 0 2.5rem 1rem;
+    }
+    blockquote {
+      font-weight: 300;
+      border-left: 5px solid #6b3d67;
+      color: rgba(222, 222, 222, 0.66);
+      padding-left: 1rem; 
+      span {
+        color: white;
+        padding-left: 5px;
+        font-weight: 500;
+      }
+    }
+  }
+
+  .description_team {
+    padding-right: 1rem !important;
+    border-right: 1px dashed rgba(222, 222, 222, .22);
+    p {
+      font-size: 1.4rem;
+      line-height: 1.45;
+    }
+    .handwriting {
+      font-size: 18px;
+      color: rgba(222, 222, 222, .33);
+      letter-spacing: 1px;
+    }
+  }
+
+  .competences_team {
+    height: 100%;
+    height: auto;
+    padding: 0rem !important;
+    h5 {
+      margin-top: 1.5rem;
+      padding-left: 1.2rem;
+      color: rgba(222, 222, 222, 1);
+    }
+    ul {
+      padding-left: 1rem;
+      li {
+        color: rgba(222, 222, 222, 0.66);
+        i {
+          color: #b75953;
+        }
+      }
+    }
+    .phone ~ span,
+    .email ~ span {
+      font-size: 13px;
+      color: rgba(222,222,222,1);
+      margin-left: 10px;
+      position: relative;
+      top: -4px;
+    }
+  }
+  .picto_team{
+    padding-left: 1rem;
+      a.btn-floating {
+        text-align: center;
+        margin-bottom: .75rem;
+        color: white;
+        font-weight: 700;
+        font-size: 1.5rem;
+        cursor: pointer;
+        background: #51326e;
+        background: -moz-linear-gradient(left, #51326e 0%, #fe7642 100%);
+        background: -webkit-gradient(linear, left top, right top, color-stop(0%, #51326e), color-stop(100%, #fe7642));
+        background: -webkit-linear-gradient(left, #51326e 0%, #fe7642 100%);
+        background: -o-linear-gradient(left, #51326e 0%, #fe7642 100%);
+        background: -ms-linear-gradient(left, #51326e 0%, #fe7642 100%);
+        background: linear-gradient(to right, #51326e 0%, #fe7642 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#51326e', endColorstr='#fe7642',GradientType=1 );
+      }
+  } 
+}
+//CLIENTS
+#section3 {
+
+  // AFFICHAGE DES LOGOS CLIENTS
+  .wall {
+    margin-top: 6rem;
+    ul {
+      width: 100%;
+      margin: 0;
+      padding: 0;
+      li {
+        width: 200px;
+        height: 200px;
+        display: inline-block;
+        margin: -3rem 3rem 1rem 6rem;
+        position: relative;
+        background-color: rgba(222, 222, 222, 0.33);
+        transition: all 0.35s;
+        -moz-transform: rotate(-45deg);
+        -webkit-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+        cursor: pointer;
+
+        &:nth-child(2) img {
+          filter: grayscale(100%) invert(75%);
+          -webkit-filter: grayscale(100%) invert(75%);
+          -moz-filter: grayscale(100%) invert(75%);
+          -o-filter: grayscale(100%) invert(75%);
+          -ms-filter: grayscale(100%) invert(75%);
+        }
+        &:nth-child(5) img,
+        &:nth-child(8) img {
+          filter: grayscale(100%) brightness(185%);
+          -webkit-filter: grayscale(100%) brightness(185%);
+          -moz-filter: grayscale(100%) brightness(185%);
+          -o-filter: grayscale(100%) brightness(185%);
+          -ms-filter: grayscale(100%) brightness(185%);
+        }
+
+        &::before, &::after {
+          position: absolute;
+          top: 0px;
+          right: 0px;
+          bottom: 0px;
+          left: 0px;
+          content: '';
+          opacity: 0;
+          -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+          transition: opacity 0.35s, transform 0.35s;
+        }
+        &::before {
+          border-top: 2px solid rgba(222, 222, 222, 0.66);
+          border-bottom: 2px solid rgba(222, 222, 222, 0.66);
+          -moz-transform: scale(0, 1);
+          -webkit-transform: scale(0, 1);
+          transform: scale(0, 1);
+        }
+        &::after {
+          border-left: 2px solid rgba(222, 222, 222, 0.66);
+          border-right: 2px solid rgba(222, 222, 222, 0.66);
+          -moz-transform: scale(1, 0);
+          -webkit-transform: scale(1, 0);
+          transform: scale(1, 0);
+        }
+        &:hover {
+          background-color: rgba(222, 222, 222, 0.165);
+          transition: all 0.35s;
+          &::before, &::after {
+            opacity: 1;
+            -webkit-transform: scale(1);
+            transform: scale(1);
+          }
+          img {
+            filter: grayscale(0%);
+            -webkit-filter: grayscale(0%);
+            -moz-filter: grayscale(0%);
+            -o-filter: grayscale(0%);
+            -ms-filter: grayscale(0%);
+            transition: all 0.35s;
+          }
+        }
+        img {
+          -moz-transform: rotate(45deg);
+          -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+          filter: grayscale(100%);
+          -webkit-filter: grayscale(100%);
+          -moz-filter: grayscale(100%);
+          -o-filter: grayscale(100%);
+          -ms-filter: grayscale(100%);
+          transition: all 0.35s;
+        }
+        p {
+          color: rgba(222, 222, 222, .66);
+          display: none;
+        }
+      }
+    }
+  }
+  // AFFICHAGE D'UN CLIENT
+  .case {
+    margin-top: 10%;
+
+    .presentation_case {
+      padding-right: 2rem !important;
+      border-right: 1px dashed rgba(222, 222, 222, .22);
+      margin-bottom: 10%;
+
+      h2.racing {
+        margin-top: 0;
+      }
+      p.left-align {
+        color: rgba(222, 222, 222, .66);
+        font-weight: 300;
+        &:first-child {
+          color: rgba(222, 222, 222, .33);
+          text-transform: uppercase;
+          font-size: 1rem;
+          font-weight: normal;
+          margin-bottom: 0;
+        }
+      }
+      p.right-align {
+        color: rgba(222, 222, 222, .66);
+        font-weight: 300;
+        margin-bottom: 6rem;
+      }
+      .picto_case a {
+        margin: 0 .33rem;
+      }
+    }
+    .chiffres {
+      padding: 4rem 0 0 2rem;
+      h5 {
+        margin-top: 1.5rem;
+        color: rgba(222, 222, 222, .33);
+      }
+      ul {
+        margin-bottom: 2rem;
+        li {
+          font-weight: 500;
+          color: rgba(222, 222, 222, .66);
+          .btn-large {
+            margin-top: 1rem;
+          }
+        }
+      }
+    }
+
+    .view_screen {
+      padding: 3rem 0;
+
+      .view_screen_title{
+        margin-bottom: 2rem;
+        text-align: center;
+
+        h2.racingTitle {
+          font-family: 'Tulpen One', cursive;
+        }
+      }
+      ul {
+        li {
+          color: rgba(222, 222, 222, 1);
+          i {
+            color: #b75953
+          }
+        }
+      }
+      p{
+        color: rgba(222,222,222,.66);
+        font-weight: 300;
+      }
+      img.second-screen{
+        margin-left: .5rem;
+      }
+    }
+    #goRight {
+      margin: 0 0 6rem 0;
+    }
+  }
+}
+// CONTACT
+#section4 {
+  padding-top: 0;
+  padding-bottom: 0;
+  .content-contact {
+    position: absolute;
+    z-index: 9999;
+    top: 50px;
+    width: 70%;
+    height: 50%;
+    top: 50%;
+    left: 50%;
+    margin-top: -15%;
+    margin-left: -35%;
+  }
+  .title {
+    font-weight: 300;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 48px;
+  }
+  .promo {
+    padding: 0 4rem;
+    margin-top: 4rem;
+  }
+  .mail .btn-floating {
+    background-color: #51326e;
+    background: #51326e;
+  }
+  .promo .promo-caption {
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+}
+
+// MAP
+.map-container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  background-color: transparent;
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: -moz-radial-gradient(center, ellipse cover, rgba(0, 0, 0, 0.66) 0%, rgba(0, 0, 0, 0.95) 50%);
+    /* FF3.6+ */
+    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(0, 0, 0, 0.66)), color-stop(50%, rgba(0, 0, 0, 0.95)));
+    /* Chrome,Safari4+ */
+    background: -webkit-radial-gradient(center, ellipse cover, rgba(0, 0, 0, 0.66) 0%, rgba(0, 0, 0, 0.95) 50%);
+    /* Chrome10+,Safari5.1+ */
+    background: -o-radial-gradient(center, ellipse cover, rgba(0, 0, 0, 0.66) 0%, rgba(0, 0, 0, 0.95) 50%);
+    /* Opera 12+ */
+    background: -ms-radial-gradient(center, ellipse cover, rgba(0, 0, 0, 0.66) 0%, rgba(0, 0, 0, 0.95) 50%);
+    /* IE10+ */
+    background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.66) 0%, rgba(0, 0, 0, 0.95) 50%);
+    /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#80000000', endColorstr='#000000', GradientType=1);
+    /* IE6-9 fallback on horizontal gradient */
+    opacity: 1;
+    z-index: 999;
+  }
+  #map-canvas {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+  }
+}
+
+// FOOTER
+footer.page-footer {
+  position: absolute;
+  width: 100%;
+  bottom: 10px;
+  z-index: 9999;
+  background-color: rgba(0, 0, 0, 0.25);
+  margin-top: 10px;
+  .row, h5 {
+    margin-bottom: 0;
+  }
+  p.texte {
+    margin-top: 0;
+  }
+  .footer-copyright {
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 30px;
+    line-height: 30px;
+  }
+}

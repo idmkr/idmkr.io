@@ -1,0 +1,31 @@
+.pt-page
+    // Mobile menu
+    div#toggle.button_container
+      span.top
+      span.middle
+      span.bottom
+    div#overlay.overlay
+      div.overlay-menu
+        ul
+          li.overlay-item
+            a(href='/') Retour home
+          li.overlay-item
+            a(href='/#force') Force
+          li.overlay-item
+            a(href='/#team') Team
+          li.overlay-item
+            a(href='/#clients') Clients
+    // Borders
+    #top
+    #right
+    #bottom
+    #left
+
+    //- items = ['contact']
+
+    //include /mixins/_menu
+    //+menu(items)
+
+    #fullpageDevis
+      include _hello
+      include _contact

@@ -1,0 +1,53 @@
+doctype html
+html(xmlns='http://www.w3.org/1999/xhtml')
+    head
+        meta(http-equiv='Content-Type', content='text/html; charset=utf-8')
+        title
+            <?=$this->section('title', "Développeurs web freelance | Une équipe de programmeurs qualifiés")?>
+        meta(name='author', content='IDMKR')
+        meta(name='description', content!="<?=$this->section('description', 'développeurs')?>")
+        meta(name='keywords', content='développement web,programmation,site internet,création')
+        meta(name='Resource-type', content='Document')
+        meta(name='viewport', content='width=900, initial-scale=0.3, maximum-scale=1.0, user-scalable=yes')
+        // Facebook Metas
+        meta(property='og:title', content='Idmkr.io')
+
+        meta(property='og:type', content='website')
+        meta(property='og:site_name', content='Idmkr')
+        meta(property='og:image', content='')
+        meta(property='og:description', content!="<?=$this->section('og:description', 'Nous sommes une équipe autonome de développeurs web enthousiastes')?>")
+        meta(property='og:url', content='https://www.idmkr.io/')
+        meta(property='og:local', content='fr_FR')
+        link(rel='stylesheet', type='text/css', href!='<?=$this->asset("css/app.css")?>')
+        
+        :php
+            $this->section("styles")
+    body
+        #outdated
+        //#intro-container.intro-container
+            // introduction
+            header.intro-header
+                #intro-bgrd.mask-bgrd(style!="background-image: url(<?=$this->asset('img/back-idmkr.jpg')?>)")
+                h1.intro-logo
+                    a(href='/') idmkr
+
+        // master content
+        .master
+            #pt-main.pt-perspective
+                .pt-page(style='visibility:visible;background:url("/img/ripple.svg") no-repeat center center;')
+                    div(style='height: 100vh;display: flex;justify-content: center;align-items: center;')
+                        h1.racingTitle(style='font-family: "Tulpen One", cursive;') Chargement
+                block page
+
+            .pt-message
+                p Your browser sucks & does not support CSS animations.
+
+        script(type='text/javascript', src!="<?=$this->asset('js/libraries.js')?>")
+        script(type='text/javascript', src!="<?=$this->asset('js/app.js')?>")
+      
+        block scripts
+      
+        script(type='text/javascript').
+            require('idmkr/app').init();
+
+        include partials/analytics

@@ -1,0 +1,45 @@
+mixin case-study(background)
+    .slide(style="background-image: url('/img/#{background}')")&attributes(attributes)
+        .container.case
+            .row
+                block
+
+mixin case-study-intro(title,isTeam)
+    .col.l9.m9.s12.presentation_case
+        p.left-align= isTeam ? "- Team" : "- Client"
+
+        h2.racing= title
+        block
+
+mixin case-study-intro-right(options)
+    .col.l3.m3.s12.chiffres
+        h5.racing #{options.year}
+        strong POINTS CLÉS
+        ul
+            each item in options.keypoints
+                li
+                    | #{item}
+        if options.link
+            a.waves-effect.waves-light.btn-large.racing(href=options.link, target='_blank') Live →
+
+
+mixin case-study-component(options)
+    .col.l12.m12.s12.view_screen.clearfix
+        .col.l12.m12.s12.view_screen_title
+            h2.racingTitle= options.title
+        .col.l8.m8.s12
+            img.responsive-img(src= '/img/' + options.screenshot)
+            if options.screenshot2
+                img.responsive-img.second-screen(src= '/img/' + options.screenshot2)
+        .col.l4.m4.s12.left-align
+            ul
+                each item in options.keypoints
+                    li
+                        i.material-icons.left flash_on
+                        | #{item}
+            if block
+                block
+
+mixin case-study-footer()
+    .col.l12.m12.s12.center-align
+        a#goRight.waves-effect.waves-light.btn-large.racing(data-fullpage-move="slideRight") Dossier suivant
