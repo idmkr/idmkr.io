@@ -4,8 +4,7 @@ rainloop
 ee-config.php
 conf
 certs
-brunch/bower_components
-brunch/node_modules
+app/brunch/node_modules
 **/vendor
 app/forms/received
 app/composer.lock
